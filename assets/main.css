@@ -1,18 +1,42 @@
 body {
     background-color: rgba(28, 46, 120, 0.6);
 }
- input { 
-    
-    padding-right: 300px;
-    text-align: left;
-}
 
-::placeholder {
-    padding-left: 10px;
+.card-body {
+    background-color: bisque;
 }
 #btnRow {
-    margin-top: 40px;
+    padding-top: 50px;
+    margin-right: 10px;
 }
-input:value {
-    color: blue;
+#studentForm {
+    margin: auto;
+    width: 50%;
 }
+
+
+#draftedPlayers {
+    width: 40%;
+    border: 2px solid #f0caa3;
+    background-color: #3d7d89;
+}
+
+#freeAgency {
+    width: 40%;
+    border: 2px dashed orangered;
+    background-color: rgba(12226, 120, 222, 0.3);
+}
+
+.player-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px 40px;
+    height: 700px;
+    justify-content: center;
+}
+
+h5 {
+    margin-top: 20px;
+    color: white;
+}
+  
