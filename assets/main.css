@@ -5,13 +5,17 @@ body {
 .card-body {
     background-color: bisque;
 }
+.form-body {
+    background-color: cadetblue;
+}
 #btnRow {
     padding-top: 50px;
     margin-right: 10px;
 }
-#studentForm {
+#playerForm {
     margin: auto;
-    width: 50%;
+    width: 45%;
+    
 }
 
 
@@ -33,10 +37,24 @@ body {
     gap: 2px 40px;
     height: 700px;
     justify-content: center;
+
 }
 
 h5 {
     margin-top: 20px;
     color: white;
 }
-  
+
+.draft-btn {
+margin: 15px;
+background-color: orange;
+color: black
+}
+.draft-btn:hover {
+    background-color: green;
+}
+.sport-card{
+    margin-left: 25%;
+    padding-bottom: 20px;
+    align-content: center;
+}
