@@ -1,22 +1,23 @@
-import { card } from "../components/card.js"
+import {  Card, Form } from "../components/card.js"
 import { refercenceList } from "../data/reference.js"
 import { renderToDom } from "../utils/renderToDom.js"
 
-const draftApp = document.querySelector("#app");
-const introBtn = document.querySelector("#introBtn");
-const targetApp = document.querySelector("app");
-const drafted = document.querySelector("#draftedPlayers");
+const introBtn = document.querySelector("#intro-btn")
+const playerDiv = document.querySelector("#playerForm")
+const draftedPlayers = document.querySelector("#draftedPlayers")
 
+const renderCard = (array) => {
+    let domString = ""
+    array.forEach(item => {
+     domString += Card(item)
+    })
+    draftedPlayers.innerHTML += domString
+}
+renderCard(refercenceList)
 
-const startApp = () => {
-     draftApp.toggleAttribute("hidden")
+const showForm = () => {
+    renderToDom("#playerForm", Form)
+    
 }
 
-const renderCards = (array) => {
-    let domString = "";
-    array.forEach( item => {
-        domString.inne += targetApp(item)
-    } )
-    renderToDom("app", domString)
-}
-introBtn.addEventListener("click", renderCards)
+introBtn.addEventListener("click", showForm)
