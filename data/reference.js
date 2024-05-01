@@ -5,19 +5,29 @@ export const players = [
       sport: "Soccer"
     },
     {
-      id: 2,
-      name: "Lebron James",
-      sport: "basketball"
-    },
-    {
       id: 3,
       name: "Tom Brady",
       sport: "football"
     },
     {
-      id: 2,
-      name: "Jackson Holliday",
+      id: 6,
+      name: "Lebron James",
+      sport: "basketball"
+    },
+    {
+      id: 4,
+      name: "Derrick Henry",
+      sport: "football"
+    },
+    {
+      id: 5,
+      name: "Kyrie Irving",
       sport: "baseball"
+    },
+    {
+      id: 2,
+      name: "Cristaino Ronaldo",
+      sport: "soccer"
     }
 
 ]

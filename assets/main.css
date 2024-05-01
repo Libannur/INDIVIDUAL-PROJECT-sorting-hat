@@ -2,11 +2,10 @@ body {
     background-color: rgba(28, 46, 120, 0.6);
 }
 
-.card-body {
-    background-color: bisque;
-}
+
+
 .form-body {
-    background-color: cadetblue;
+    background-color: #FDCCCC ;
 }
 #btnRow {
     padding-top: 50px;
@@ -23,7 +22,9 @@ body {
     width: 40%;
     border: 2px solid #f0caa3;
     background-color: #3d7d89;
-}
+    display: flex;
+    flex-wrap: wrap;
+align-content: center;}
 
 #freeAgency {
     width: 40%;
@@ -54,7 +55,10 @@ color: black
     background-color: green;
 }
 .sport-card{
+    margin-top: 20px;
     margin-left: 25%;
     padding-bottom: 20px;
     align-content: center;
+    width: auto;
+    background-color: #ffa200
 }
