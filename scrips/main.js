@@ -1,23 +1,22 @@
-import {  Card, Form } from "../components/card.js"
-import { refercenceList } from "../data/reference.js"
+import {  Card, renderForm } from "../components/card.js"
+import { players } from "../data/reference.js"
 import { renderToDom } from "../utils/renderToDom.js"
 
 const introBtn = document.querySelector("#intro-btn")
-const playerDiv = document.querySelector("#playerForm")
 const draftedPlayers = document.querySelector("#draftedPlayers")
-
+const sortBtn = document.querySelector("#sort-btn")
+const formDiv = document.querySelector("#playerForm")
 const renderCard = (array) => {
     let domString = ""
     array.forEach(item => {
-     domString += Card(item)
+        domString += Card(item)
     })
     draftedPlayers.innerHTML += domString
 }
-renderCard(refercenceList)
+renderCard(players)
 
-const showForm = () => {
-    renderToDom("#playerForm", Form)
-    
-}
 
-introBtn.addEventListener("click", showForm)
+introBtn.addEventListener("click", renderForm) 
+
+
+
