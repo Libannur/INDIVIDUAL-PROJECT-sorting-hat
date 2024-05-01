@@ -1,4 +1,4 @@
-export const refercenceList = [
+export const players = [
     {
       id: 1,
       name: "Lionel Messi",
