@@ -1,8 +1,10 @@
 body {
-    background-color: rgba(28, 46, 120, 0.6);
+    background: url("../utils/photos/sport.jpg");background-size: cover;
 }
 
-
+.intro {
+    background-color: #b5a19e;
+}
 
 .form-body {
     background-color: #FDCCCC ;
@@ -14,7 +16,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
 }
 #playerForm {
     margin: auto;
@@ -26,10 +27,11 @@ body {
 #draftedPlayers {
     width: 40%;
     border: 2px solid #f0caa3;
-    background-color: #3d7d89;
     display: flex;
     flex-wrap: wrap;
-align-content: center;}
+    align-content: start;
+    padding: 20px;
+}
 
 #freeAgency {
     width: 40%;
@@ -41,12 +43,7 @@ align-content: center;}
     display: flex;
     flex-direction: row;
     gap: 2px 40px;
-    height: 700px;
-    justify-content: center;
-
-}
-.intro {
-    background-color: #42e6f5;
+    height: fit-content
 }
 
 h5 {
@@ -71,10 +68,22 @@ color: black
     background-color: #ffa200
 }
 .m-1 {
-    border-radius: 30px;
-    width: 15px;
+   will-change: contents;
 }
 #all {
     background-color: #f542bf;
     color: black;
+}
+#basketball {
+    background-color: #9c7908;
+}
+#soccer{
+    background-color: #65069c;
+}
+div.row.sport-card {
+    background-color: #47739e;
+    width: 140px;
+    height: 190px;
+    margin: 5px;
+    border-radius: 20px;
 }
