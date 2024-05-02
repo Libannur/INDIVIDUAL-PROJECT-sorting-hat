@@ -8,8 +8,13 @@ body {
     background-color: #FDCCCC ;
 }
 #btnRow {
-    padding-top: 50px;
-    margin-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
 }
 #playerForm {
     margin: auto;
@@ -40,6 +45,9 @@ align-content: center;}
     justify-content: center;
 
 }
+.intro {
+    background-color: #42e6f5;
+}
 
 h5 {
     margin-top: 20px;
@@ -61,4 +69,12 @@ color: black
     align-content: center;
     width: auto;
     background-color: #ffa200
+}
+.m-1 {
+    border-radius: 30px;
+    width: 15px;
+}
+#all {
+    background-color: #f542bf;
+    color: black;
 }
