@@ -1,33 +1,34 @@
 export const players = [
-    {
-      id: 1,
-      name: "Lionel Messi",
-      sport: "Soccer"
-    },
-    {
-      id: 3,
-      name: "Tom Brady",
-      sport: "football"
-    },
-    {
-      id: 6,
-      name: "Lebron James",
-      sport: "basketball"
-    },
-    {
-      id: 4,
-      name: "Derrick Henry",
-      sport: "football"
-    },
-    {
-      id: 5,
-      name: "Kyrie Irving",
-      sport: "baseball"
-    },
-    {
-      id: 2,
-      name: "Cristaino Ronaldo",
-      sport: "soccer"
-    }
-
+  {
+    id: 3,
+    name: "Mookie Betts",
+    sport: "baseball"
+  },
+  {
+    id: 4,
+    name: "Derrick Henry",
+    sport: "football"
+  },
+  {
+    id: 2,
+    name: "Tom Brady",
+    sport: "football"
+  },
+  {
+    id: 6,
+    name: "Cristaino Ronaldo",
+    sport: "soccer"
+  },
+  
+  {
+  id: 5,
+  name: "Lebron James",
+  sport: "basketball"
+  },
+  {
+    id: 1,
+    name: "Lionel Messi",
+    sport: "soccer"
+  },
+  
 ]
