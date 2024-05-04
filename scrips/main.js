@@ -13,8 +13,7 @@ const soccer = document.querySelector("#soccer");
 const football = document.querySelector("#football");
 const basketball = document.querySelector("#basketball");
 const baseball = document.querySelector("#baseball");
-
-
+const expelDiv = document.querySelector("#expelPlayers")
 
 
 // a Function that puts the card on the dom.
@@ -78,21 +77,63 @@ const renderForm =  () => {
 
 const buttonFilter = (array, sportString) => {
     let newSportArray = []
-  for (const player of players) {
-    if(player.sport === sportString) {
-        newSportArray.push(player)
+    for (const player of players) {
+        if(player.sport === sportString) {
+            newSportArray.push(player)
+        }
+        console.log(newSportArray);
     }
-    console.log(newSportArray);
-  }
-  renderCard(newSportArray)
+    renderCard(newSportArray)
 }
+
+
+//  expel button
+
+
+// an empty array for free Agency Players
+
+const expelledPlayers = []
+
+
+const expel = (array) => {
+    let domString = " "
+    for (const player of array) {
+        domString +=  `<div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+        <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">${player.name}</h5>
+        <p class="card-text">Sport: ${player.sport}</p>
+        </div>
+        </div>
+        </div>
+        </div>`;
+    }
+    expelDiv.innerHTML = domString
+}
+
+
+draftedPlayers.addEventListener("click", (e) => {
+    if (e.target.id.includes("delete")) {
+        e.preventDefault()
+    const [, id] = e.target.id.split("--")
+    const index = players.findIndex(player => player.id === Number(id))
+    const removedPlayer = players[index]
+    console.log(removedPlayer);
+    players.splice(index, 1)
+    expelledPlayers.push(removedPlayer)
+    renderCard(players)
+    expel(expelledPlayers)
+      
+  }
+})
 
 
 
 const starApp = () => {
-
-    introBtn.addEventListener("click", renderForm) 
+    
     renderCard(players)
+    introBtn.addEventListener("click", renderForm) 
     
     showAll.addEventListener("click", () => {
         renderCard(players)
@@ -111,7 +152,9 @@ const starApp = () => {
     football.addEventListener("click", () => {
         buttonFilter(players, "football")
     })
+    
 }
+
 
     
 
