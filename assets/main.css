@@ -1,6 +1,7 @@
 body {
-    background: url("../utils/photos/sport.jpg");background-size: cover;
+    background: url("./photos/sport.jpg");background-size: cover;
 }
+
 
 .intro {
     background-color: #b5a19e;
