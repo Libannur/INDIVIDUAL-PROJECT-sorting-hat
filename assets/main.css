@@ -30,20 +30,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: start;
+    height: fit-content;
     padding: 20px;
 }
 
-#freeAgency {
+#expelPlayers {
     width: 40%;
     border: 2px dashed orangered;
     background-color: rgba(12226, 120, 222, 0.3);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    height: fit-content;
+    padding: 20px;
 }
 
 .player-container {
     display: flex;
     flex-direction: row;
     gap: 2px 40px;
-    height: fit-content
+    margin-left: 15%;
 }
 
 h5 {
@@ -86,4 +93,12 @@ div.row.sport-card {
     height: 190px;
     margin: 5px;
     border-radius: 20px;
+}
+div.card.mb-3 {
+background-color: #95cfc0;
+width: 180px;
+height: 200px;
+margin: 5px;
+border-radius: 20px;
+
 }
