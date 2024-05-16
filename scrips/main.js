@@ -87,14 +87,14 @@ const buttonFilter = (array, sportString) => {
 }
 
 
-//  expel button
 
 
-// an empty array for free Agency Players
+// an empty array for expelled Players
 
 const expelledPlayers = []
 
 
+//  create a function that craetes expelled players container and pushes to dom
 const expel = (array) => {
     let domString = " "
     for (const player of array) {
@@ -112,7 +112,7 @@ const expel = (array) => {
     expelDiv.innerHTML = domString
 }
 
-
+// event to target it 
 draftedPlayers.addEventListener("click", (e) => {
     if (e.target.id.includes("delete")) {
         e.preventDefault()
@@ -133,6 +133,7 @@ draftedPlayers.addEventListener("click", (e) => {
 const starApp = () => {
     
     renderCard(players)
+
     introBtn.addEventListener("click", renderForm) 
     
     showAll.addEventListener("click", () => {
